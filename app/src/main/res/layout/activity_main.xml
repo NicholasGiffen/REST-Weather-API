@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_margin"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnALL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickAll"
+        android:text="ALL" />
+
+    <Button
+        android:id="@+id/btnCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnALL"
+        android:layout_alignLeft="@id/btnALL"
+        android:layout_marginTop="20dp"
+        android:onClick="clickCity"
+        android:text="CITY" />
+
+    <EditText
+        android:id="@+id/inputZip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/btnCity"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/btnCity"
+        android:ems="10"
+        android:hint="Enter Zip"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnWarmerThan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCity"
+        android:layout_alignLeft="@id/btnCity"
+        android:layout_marginTop="20dp"
+        android:onClick="clickWarmerThan"
+        android:text="WARMER THAN" />
+
+    <EditText
+        android:id="@+id/inputDegree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/btnWarmerThan"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/btnWarmerThan"
+        android:ems="10"
+        android:hint="Enter Degree"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/lblMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnWarmerThan"
+        android:layout_alignLeft="@id/btnWarmerThan"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>
